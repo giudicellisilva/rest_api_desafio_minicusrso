@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.post("/", async function(req, res){
-    res.status(200).json({"resposta" : await setCategoria(req.body.name) });
+    res.status(200).json({"resposta" : await setCategoria(req.body.name, req.body.description ) });
 })
 
 module.exports = router;

@@ -7,7 +7,7 @@ const cors = require('cors');
 const index = require("./routes/index");
 const categoria = require("./routes/categorias");
 
-app.use("/index", cors(), index);
+app.use("/", cors(), index);
 app.use("/categoria", cors(), categoria)
 
 module.exports = app;
